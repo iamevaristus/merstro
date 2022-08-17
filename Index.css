@@ -8,17 +8,16 @@ h1, h2, h3, h4, h5, li{
     color: #000078;
 }
 
-p{
+p, li{
     color: #787878;
     font-size: 12px;
 }
 
-/*HEADER*/
+/*Navigation*/
 
 #header{
     background-color: #dcdaff;
     padding-top: 30px;
-    width: 100%;
 }
 
 #topnavigation img{
@@ -54,33 +53,14 @@ p{
     margin-left: 90px;
 }
 
-#header2 h3, #header h1{
-    margin-bottom: 20px;
-}
-
-#header h3, #header p{
+#header p{
+    margin-bottom: 40px;
     width: 50%;
 }
 
-#header p{
-    margin-bottom: 40px;
-}
-
-#header2 a{
-    background-color: #07034d;
-    padding: 12px;
-    border-radius: 10px;
-    color: white;
-    margin-left: 60px;
-    text-decoration:none;
-    display: inline-block;
-    padding-top: 10px;
-    text-align: left;
-}
-
-#header2 img, #product img{
+#header2 img{
     float: right;
-    margin-right: 25px;
+    margin-right: 70px;
 }
 
 #header:after{
@@ -90,134 +70,96 @@ p{
     margin-bottom: 40px;
 }
 
-/*PRODUCT*/
-
-#product{
-    max-width: 100%;
-    margin: 10px;
-}
-
-#product img{
-    width: 15%;
-}
-
-.allproducts{
-    width: 75%;
+/*The body*/
+section{
+   /*height: 100vh;*/
+    width: 100%;
     display: flex;
 }
 
-#product1, #product2, #product3, #product4, #product5{
-    display:inline-block;
-    max-width: 45%;
+.container{
+    max-width: 100rem;
+    padding: 0 5.5rem;
 }
 
-#product2{
-    padding-top: 0px;
+.container-item{
+    background-color: #white;
+    border-radius: 16px;
+    box-shadow: .5rem 5px .5rem 1px #dcdaff;
+    padding: 1rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
-body>img{
-    float: left;
-    width: 15%;
-    margin-right: 20px;
+.container-link{
+    font-size: 1.25rem;
+    color: #000078;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
-/*SAFETY*/
-
-#safety{
-    background-color: #dcdaff;
+.container-link ion-icon[name="phone-portrait-outline"]{
+    display: none;
 }
 
-#safety h2{
-    padding-top: 15px;
-    text-align: center;
+.container-item:target .container-link ion-icon[name="phone-landscape-outline"]{
+    display: none;
 }
 
-.list{
-    width: 80%;
-    display: inline-flex;
-}
-
-#safety1, #safety2, #safety3, #safety4{
-    display: inline-block;
-    width: 45%;
-}
-
-#safety1, #safety3{
-   margin-top: 30px;
-    margin-right: 15px
-}
-
-#safety2{
-    margin-right: 15px
-}
-/*CLOCK*/
-
-#time h1{
-    margin-left: 30px;
-}
-
-#time ul{
-    list-style-image: url(small.png);
-    margin-left: 100px;
-    line-height: 2em;
-}
-
-#time:after{
-    content: "";
-    clear: both;
+.container-item:target .container-link ion-icon[name="phone-portrait-outline"]{
     display: block;
 }
 
-#time img{
-    float: right;
+strong{
+    color: #07034d;
 }
 
-#launch h3{
-    text-align: center;
-    color: white;
-    margin-bottom: 70px
+.script{
+    max-height: 0;
+    overflow: hidden;
+    /*background-color: aliceblue;*/
+    position: relative;
+    transition: max-height 1700ms;
 }
 
-#launch{
-    background-image: url(Logobluebackground.gif); 
-    background-repeat: no-repeat; 
-    background-size: contain; 
-    background-position: center;
-    background-color: #07034d; padding-top: 1px
-}
-
-#google{
-    margin-left: 30px; 
-    float: left; 
-    margin-bottom: 10px
-}
-
-#apple{
-    margin-right: 30px; 
-    float: right; 
-    margin-bottom: 10px
-}
-
-/*LAUNCH*/
-
-#launch:after{
+.script::before{
     content: "";
-    clear: both;
-    display: block;
-}
-#countdown{
-    text-align: center;
-}
-
-#clock{
-    display: inline-flex;
-}
-
-.days{
-    margin-right: 40px;
+    position: absolute;
+    width: .2rem;
+    height: 90%;
+    background-color: #787878;
+    left: 0;
+    margin: 1px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-/*FOOTER*/
+.script p{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.script li{
+    font-size: 1rem;
+}
+
+.script ul{
+    margin-left: 2rem;
+    list-style-image: url(../Home/Icons/small.png);
+}
+
+.container-item:target .script{
+    max-height: 30rem;
+}
+
+ion-icon {
+  color: #00021e;
+}
+
+/*The footer*/
 
 footer{
     background-color: #07034d;
@@ -237,13 +179,11 @@ span a, span h4{
 }
 
 #products, #connectask, #companysupport{
-    margin: 3%;
-    float: left;
-}
-
-#all{
     display: inline-block;
-    width: 100%;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    float: left;
 }
 
 #social{
@@ -259,7 +199,11 @@ span a, span h4{
     top: 92%;
     left: 84px;
 }
-
+/*
+.socialmedia a img{
+    margin-left: 1px;
+}
+*/
 #all h4{
     color:darkslateblue;
 }
@@ -273,245 +217,131 @@ span a, span h4{
 #copyright h5{
     text-align: center;
     color: white;
-    font-size: 10px;
     margin-bottom: 0px;
 }
 
-/*MEDIA QUERY*/
-
-@media screen and (max-width:768px){
-    #topnavigation{
-        margin-right: px;
+@media screen and (max-width: 734px){
+    #topnavigation a img{
+        margin-left: 25px;
+        width: 15%;
+        height: 30%;
     }
     
-    #topnavigation img{
-        margin-left: 5px;
+    #header img{
+        margin-right: 10px;
+    }
+    
+    #topnavigation{
+        margin-right: 10px;
     }
     
     #login a{
+        margin-left: 10px;
         padding: 6px;
         font-size: 12px;
         border-radius: 5px;
-        margin-top: 10px;
     }
     
     #header2{
-        margin-left: 10px;
+        margin-left: 20px;
     }
     
-    #header2 img{
-        margin-right: 0px;
-        margin-bottom: 10px;
+    #header2 p{
+        width: 90%;
     }
     
-    #header2 h3, #header2 p{
-        width: auto;
+    .container{
+        padding: 1.5rem;
     }
     
-    #product{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 0px;
+    .container-item{
+        padding: 0.8rem;
+        border-radius: 10px;
     }
     
-    #product img{
-        margin-top:20%;
-        margin-right:0px;
-        width: 15%;
-    }
-    
-    #product3, #product4, #product1, #product2{
-        margin-top: 10px;
-    }
-    
-    .allproducts{
-        width: 80%;
-        text-align: center;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    .allproducts h3{
+    .container-link{
         font-size: 16px;
     }
     
-    body>img{
-        width: 30%;
-        margin-top: 100px;
+    .script p, .script li{
+        font-size: 12px;
     }
     
-    #safety h2{
-        font-size: 22px;
-        width: 80%;
-        position: relative;
-        top: 20px;
-    }
-    
-    
-    .list{
-        width: 60%;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
-        display: inline-block;
-    }
-    
-    #safety1, #safety3{
-        width: 45%;
+    #products, #connectask, #companysupport{
         font-size: 14px;
     }
     
-    #safety2,  #safety4{
-        width: 45%;
-        font-size: 14px;
+    footer h2{
+        font-size: 18px;
     }
     
-    #time h1{
-        margin-left: 10px;
-        font-size: 22px;
-        margin-bottom: 0px;
-    }
-    
-    #time ul{
-        margin-left: 10px;
-        font-size: 12px;
-        margin-bottom: 0px;
-    }
-    
-    #time img{
-        width: 30%;
-    }
-    
-    #google, #apple{
-        margin: 10px;
-        width: 25%;
-    }
-}
-
-
-@media screen and (max-width:360px){
-    
-    #topnavigation{
-        margin-right: 5px;
-    }
-    
-    #topnavigation img{
-        margin-left: 5px;
-    }
-    
-    #login a{
-        padding: 5px;
-        font-size: 12px;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-    
-    #header2{
-        margin-left: 10px;
-    }
-    
-    #header2 img{
-        margin-right: 0px;
-        margin-bottom: 10px;
-        width: 99%;
-        height: 40%;
-    }
-    
-    #header2 h3, #header2 p{
-        width: auto;
-    }
-    
-    #product{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    #product img{
-        margin-right: 0px;
-        float: none;
-        margin-left: 80px;
-        width: 50%;
-    }
-    
-    #product3, #product4, #product1, #product2{
-        margin-top: 10px;
-    }
-    
-    .allproducts{
-        width: 100%;
-    }
-    
-    .allproducts h3{
-        font-size: 16px;
-    }
-    
-    body>img{
-        width: 25%;
-        margin-top: 5px;
-        margin-right: 0px;
-    }
-    
-    #safety h2{
-        font-size: 20px;
-        margin-bottom: 50px;
-        width: 100%;
-    }
-    
-    .list{
-        display: inline-block;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
-        
-    }
-    
-    #safety1, #safety3{
-        width: 35%;
-        margin-left: 10px;
-        font-size: 12px;
-    }
-    
-    #safety2, #safety4{
-        margin: 10px;
-        font-size: 12px;
-    }
-    
-    #time h1{
-        margin-left: 10px;
-        font-size: 22px;
-        margin-bottom: 0px
-    }
-    
-    #time ul{
-        margin-left: 10px;
-        font-size: 12px;
-        margin-bottom: 0px;
-    }
-    
-    #time img{
-        width: 40%;
-        margin-top: 16%;
-    }
-    
-    #google, #apple{
-        margin: 5px;
-        width: 30%;
-    }
-    
-    #countdown h2{
-        font-size: 20px;
-    }
-    
-    #countdown p{
+    #copyright h5{
         font-size: 10px;
     }
     
-    footer h4, footer a{
+}
+
+@media screen and (max-width:360px){
+    #topnavigation a img{
+        margin-left: 15px;
+        width: 30%;
+        height: 30%;
+    }
+    
+    #header img{
+        margin-right: 10px;
+    }
+    
+    #topnavigation{
+        margin-right: 10px;
+    }
+    
+    #login a{
+        margin-left: 2px;
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    
+    #header2{
+        margin-left: 20px;
+    }
+    
+    #header2 p{
+        width: 90%;
+    }
+    
+    .container{
+        padding: 1.5rem;
+    }
+    
+    .container-item{
+        padding: 0.7rem;
+        border-radius: 10px;
+    }
+    
+    .container-link{
+        font-size: 12px;
+    }
+    
+    .script p, .script li{
+        font-size: 12px;
+    }
+    
+    #products, #connectask, #companysupport{
         font-size: 14px;
     }
     
-    #all{
-        text-align: center;
+    footer h2{
+        font-size: 18px;
     }
+    
+    #copyright h5{
+        font-size: 10px;
+    }
+    
+    #social{
+        margin-right: 2px;
+    }
+    
 }
