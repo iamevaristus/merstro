@@ -1,1 +1,1 @@
-# support.merstro
+# connect.merstro
