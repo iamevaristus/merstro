@@ -1,0 +1,473 @@
+/*Normal*/
+
+body{
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, li, span{
+    color: #000078;
+}
+
+p, li{
+    color: #787878;
+    font-size: 12px;
+}
+
+/*Header*/
+
+#header{
+    background-color: #dcdaff;
+    padding-top: 30px;
+}
+
+#topnavigation img{
+    margin-left: 40px;
+    float: left;
+}
+
+#topnavigation{
+    margin-right: 40px;
+}
+
+#login a{
+    color: white;
+    text-decoration:none;
+    background-color: #07034d;
+    padding: 10px;
+    margin-top: 4px;
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+#topnavigation:after{
+    content: "";
+    clear: both;
+    display: block;
+    margin-bottom: 40px;
+}
+
+#header2{
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+#header p{
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+#header2 img{
+    float: right;
+    margin-right: 70px;
+}
+
+#header:after{
+    content: "";
+    clear: both;
+    display: block;
+    margin-bottom: 40px;
+}
+
+/*Speaking*/
+
+.speaking{
+    text-align: center;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+.speaking>p{
+    margin-top: 10px;
+    font-size: 16;
+}
+
+.speaking a, #picture a{
+    text-decoration: none;
+}
+
+.speak{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background: #A2C8E5;
+    border-radius: 10px;
+    padding-top: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 1rem;
+}
+
+.speak .location{
+    display: block;
+    padding-left: 0.3rem;
+    text-align: center;
+}
+
+.speak .call{
+    display: block;
+    text-align: center;
+}
+
+.speak .call h5 {
+    margin-left: 10px;
+}
+
+.speak .message{
+    padding-right: 0.3rem;
+    display: block;
+    text-align: center;
+
+}
+
+.speak .message h5 {
+    margin-left: 10px;
+}
+
+/*Picture Card  #A2C8E5*/
+
+section{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture{
+    text-align: center;
+}
+
+.picture p{
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.team{
+    width: 100%;
+}
+
+.pioneers{
+    text-align: center;
+}
+
+.usall{
+    padding-left: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    display: inline-flex;
+}
+
+.usall .pics{
+    height: 150px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: #07034d;
+    padding: 4px;
+}
+
+.usall .pics img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #dcdaff;
+}
+
+.usall::after{
+    content: "";
+    clear: both;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    background: #07034d;
+    border-radius: 20px 20px 0 0;
+    top: 0;
+    z-index: 100%;
+    left: 0;
+}
+
+.card{
+    background: white;
+    box-shadow: 0.5rem 1px 1rem #A2C8E5;
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    display: block;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.usall .details{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.usall .icons{
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usall .icons img{
+    margin-top: 9px;
+}
+
+.details .name{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.details .position{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.details .function{
+    font-size: 10px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #07034d;
+    padding-bottom: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#motto h2{
+    color: white;
+    padding-top: 15px;
+    margin-left: 30px;
+}
+
+span a, span h4{
+    color: white;
+    text-decoration: none;
+}
+
+#products, #connectask, #companysupport{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#social{
+    float: right;
+    margin-right: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.socialmedia{
+    position: absolute;
+    bottom: 1px;
+    top: 92%;
+    left: 86px;
+}
+
+#all h4{
+    color:darkslateblue;
+}
+
+#all:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#copyright h5{
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:640px){
+    
+     #topnavigation{
+        margin-right: 10px;
+    }
+
+    #login a{
+        color: white;
+        text-decoration:none;
+        background-color: #07034d;
+        padding: 8px;
+        font-size: 12px;
+        margin-top: 8px;
+        float: right;
+        margin-left: 10px;
+        border-radius: 8px;
+        text-align: right;
+    }
+    
+    #header2{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+    #header p{
+        margin-bottom: 40px;
+        width: 99%;
+    }
+    
+    .speaking>p{
+        font-size: 12px;
+    }
+    
+    footer h2{
+        font-size: 20px;
+    }
+    
+    #products, #connectask, #companysupport{
+        font-size: 14px;
+    }
+    
+    #copyright h5{
+        font-size: 9px;
+    }
+    
+    .speaking h2{
+        font-size: 22px;
+        margin-top: 0px;
+    }
+    
+    .speak{
+        margin-left:10px;
+        margin-right:10px;
+    }
+    
+    .picture img{
+        width: 50%;
+    }
+    
+    .usall{
+        padding-left: 0px;
+    }
+    
+    .card{
+        margin-left: 0px;
+    }
+    
+    footer h2{
+        font-size: 20px;
+    }
+    
+    #products, #connectask, #companysupport{
+        font-size: 14px;
+    }
+    
+    #copyright h5{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:360px){
+    
+     #topnavigation{
+        margin-right: 10px;
+    }
+
+    #login a{
+        color: white;
+        text-decoration:none;
+        background-color: #07034d;
+        padding: 8px;
+        font-size: 12px;
+        margin-top: 8px;
+        float: right;
+        margin-left: 10px;
+        border-radius: 8px;
+        text-align: right;
+    }
+    
+    #header2{
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    #header p{
+        margin-bottom: 40px;
+        width: 99%;
+    }
+    
+    .speaking>p{
+        font-size: 12px;
+    }
+    
+    .speaking h2{
+        font-size: 22px;
+        margin-top: 0px;
+    }
+    
+    .card{
+        border-radius: 20px;
+        display: inline-flex;
+        margin: 10px;
+        padding: 25px;
+    }
+    
+    .usall .pics{
+        height: 120px;
+        width: 110px;
+        padding: 0px;
+        border-radius: 90%;
+        background-color: #07034d;
+    }
+
+    .usall .pics img{
+        height: 90%;
+        width: 90%;
+        margin-top: 5px;
+        position: relative;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid #dcdaff;
+    }
+
+    .details .name{
+        font-size: 15px;
+        margin-bottom: 25px;
+        position: relative;
+        color: white;
+        font-size: 12px
+    }
+
+    .details .position{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .details .function{
+        font-size: 10px;
+    }
+    
+    .speak{
+        display: inline-block;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 0rem;
+        padding: 45px
+    }
+    
+}
