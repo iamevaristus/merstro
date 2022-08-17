@@ -1,7 +1,8 @@
+/*All*/
+
 body{
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
 }
 
 h1, h2, h3, h4, h5, li{
@@ -13,7 +14,8 @@ p{
     font-size: 12px;
 }
 
-/*HEADER*/
+
+/**/
 
 #header{
     background-color: #dcdaff;
@@ -21,25 +23,19 @@ p{
     width: 100%;
 }
 
-#topnavigation img{
-    margin-left: 40px;
+#topnavigation a img{
+    margin-left: 60px;
     float: left;
+}
+
+#topquote{
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
 }
 
 #topnavigation{
     margin-right: 40px;
-}
-
-#login a{
-    color: white;
-    text-decoration:none;
-    background-color: #07034d;
-    padding: 10px;
-    margin-top: 4px;
-    float: right;
-    margin-left: 10px;
-    border-radius: 10px;
-    text-align: right;
 }
 
 #topnavigation:after{
@@ -49,164 +45,64 @@ p{
     margin-bottom: 40px;
 }
 
-#header2{
-    margin-top: 40px;
-    margin-left: 90px;
-}
-
-#header2 h3, #header h1{
-    margin-bottom: 20px;
-}
-
-#header h3, #header p{
-    width: 50%;
-}
-
-#header p{
-    margin-bottom: 40px;
-}
-
-#header2 a{
-    background-color: #07034d;
-    padding: 12px;
-    border-radius: 10px;
-    color: white;
-    margin-left: 60px;
-    text-decoration:none;
-    display: inline-block;
-    padding-top: 10px;
-    text-align: left;
-}
-
-#header2 img, #product img{
-    float: right;
-    margin-right: 25px;
-}
-
-#header:after{
-    content: "";
-    clear: both;
-    display: block;
-    margin-bottom: 40px;
-}
-
-/*PRODUCT*/
-
-#product{
-    max-width: 100%;
-    margin: 10px;
-}
-
-#product img{
-    width: 15%;
-}
-
-.allproducts{
-    width: 75%;
-    display: flex;
-}
-
-#product1, #product2, #product3, #product4, #product5{
-    display:inline-block;
-    max-width: 45%;
-}
-
-#product2{
-    padding-top: 0px;
-}
+/*Statement*/
 
 body>img{
-    float: left;
-    width: 15%;
-    margin-right: 20px;
+    margin-left: 70px;
 }
 
-/*SAFETY*/
-
-#safety{
+.statement{
+    margin: 30px;
+    padding: 30px;
+    text-align: justify;
+    display: inline-block;
+    border-radius: 20px;
     background-color: #dcdaff;
 }
 
-#safety h2{
-    padding-top: 15px;
-    text-align: center;
-}
-
-.list{
-    width: 80%;
-    display: inline-flex;
-}
-
-#safety1, #safety2, #safety3, #safety4{
-    display: inline-block;
-    width: 45%;
-}
-
-#safety1, #safety3{
-   margin-top: 30px;
-    margin-right: 15px
-}
-
-#safety2{
-    margin-right: 15px
-}
-/*CLOCK*/
-
-#time h1{
+.statement p{
+    font-size: 20px;
+    color: #07034d;
+    text-align: left;
     margin-left: 30px;
+    margin-right: 30px;
 }
 
-#time ul{
-    list-style-image: url(small.png);
-    margin-left: 100px;
-    line-height: 2em;
+.statement strong{
+    font-size: 20px;
+    color: #00021e;
 }
 
-#time:after{
-    content: "";
-    clear: both;
+/*Countdown*/
+.card{
+    background: white;
     display: block;
 }
 
-#time img{
-    float: right;
-}
-
-#launch h3{
-    text-align: center;
-    color: white;
-    margin-bottom: 70px
-}
-
-#launch{
-    background-image: url(Logobluebackground.gif); 
-    background-repeat: no-repeat; 
-    background-size: contain; 
-    background-position: center;
-    background-color: #07034d; padding-top: 1px
-}
-
-#google{
-    margin-left: 30px; 
-    float: left; 
-    margin-bottom: 10px
-}
-
-#apple{
-    margin-right: 30px; 
-    float: right; 
-    margin-bottom: 10px
-}
-
-/*LAUNCH*/
-
-#launch:after{
-    content: "";
-    clear: both;
-    display: block;
-}
 #countdown{
     text-align: center;
+    margin-top: 50px;
+    background-color: #07034d;
+    display: block;
+    border-radius: 25px;
+    align-items: center;
+    box-shadow: .5rem 5px .5rem 5px #dcdaff;;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+#countdown h2{
+    color: white;
+}
+
+#countdown p{
+    color: #dcda;
+}
+
+#clock p{
+    font-size: 20px;
 }
 
 #clock{
@@ -217,11 +113,12 @@ body>img{
     margin-right: 40px;
 }
 
-/*FOOTER*/
+/*Footer*/
 
 footer{
     background-color: #07034d;
     padding-bottom: 1px;
+    padding-top: 6px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -237,13 +134,11 @@ span a, span h4{
 }
 
 #products, #connectask, #companysupport{
-    margin: 3%;
-    float: left;
-}
-
-#all{
     display: inline-block;
-    width: 100%;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    float: left;
 }
 
 #social{
@@ -260,6 +155,7 @@ span a, span h4{
     left: 84px;
 }
 
+
 #all h4{
     color:darkslateblue;
 }
@@ -273,245 +169,169 @@ span a, span h4{
 #copyright h5{
     text-align: center;
     color: white;
-    font-size: 10px;
     margin-bottom: 0px;
 }
 
 /*MEDIA QUERY*/
 
-@media screen and (max-width:768px){
+/*TABLETS*/
+
+
+/*PHONES*/
+
+@media screen and (max-width:728px){
+    #topnavigation a img{
+        width: 20%;
+        margin-left: 20px;
+    }
+    
     #topnavigation{
-        margin-right: px;
-    }
-    
-    #topnavigation img{
-        margin-left: 5px;
-    }
-    
-    #login a{
-        padding: 6px;
-        font-size: 12px;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-    
-    #header2{
-        margin-left: 10px;
-    }
-    
-    #header2 img{
         margin-right: 0px;
-        margin-bottom: 10px;
     }
     
-    #header2 h3, #header2 p{
-        width: auto;
-    }
-    
-    #product{
-        margin-left: 10px;
+    #topquote{
         margin-right: 10px;
-        margin-bottom: 0px;
-    }
-    
-    #product img{
-        margin-top:20%;
-        margin-right:0px;
-        width: 15%;
-    }
-    
-    #product3, #product4, #product1, #product2{
         margin-top: 10px;
-    }
-    
-    .allproducts{
-        width: 80%;
-        text-align: center;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    .allproducts h3{
-        font-size: 16px;
+        width: 20%;
     }
     
     body>img{
-        width: 30%;
-        margin-top: 100px;
-    }
-    
-    #safety h2{
-        font-size: 22px;
-        width: 80%;
-        position: relative;
-        top: 20px;
-    }
-    
-    
-    .list{
-        width: 60%;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
-        display: inline-block;
-    }
-    
-    #safety1, #safety3{
-        width: 45%;
-        font-size: 14px;
-    }
-    
-    #safety2,  #safety4{
-        width: 45%;
-        font-size: 14px;
-    }
-    
-    #time h1{
-        margin-left: 10px;
-        font-size: 22px;
-        margin-bottom: 0px;
-    }
-    
-    #time ul{
-        margin-left: 10px;
-        font-size: 12px;
-        margin-bottom: 0px;
-    }
-    
-    #time img{
-        width: 30%;
-    }
-    
-    #google, #apple{
-        margin: 10px;
         width: 25%;
+        margin-left: 20px
+    }
+    
+    .statement p{
+        font-size: 14px;
+        margin-left: 0px;
+        text-align: justify;
+        margin-right: 0px;
+    }
+    
+    .statement strong{
+        font-size: 15px;
+    }
+    
+    .statement{
+        margin: 20px
+    }
+    
+    #countdown{
+        padding: 10px;
+        margin: 30px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+    
+    #clock{
+        font-size: 12px;
+    }
+    
+    #clock p{
+        font-size: 12px;
+    }
+    
+    .days{
+        margin-right: 10px;
+    }
+    
+    #products, #connectask, #companysupport{
+        font-size: 14px;
+    }
+    
+    #copyright h5{
+        font-size: 10px;
     }
 }
 
-
-@media screen and (max-width:360px){
-    
-    #topnavigation{
-        margin-right: 5px;
+@media screen and (max-width:600px){
+    #topnavigation a img{
+        width: 20%;
+        margin-left: 20px;
     }
     
-    #topnavigation img{
-        margin-left: 5px;
+    #topquote{
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:450){
+    
+    #topnavigation a img{
+    }
+    
+    #topquote{
+        margin-right: 10px;
+        margin-top: 20px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:298px){
+    
+    #topnavigation a img{
+        width: 30%;
+        height: 5%;
+        margin-left: 20px;
+    }
+    
+    #topquote{
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 40%;
     }
     
     #login a{
-        padding: 5px;
+        margin-left: 2px;
+        padding: 6px;
         font-size: 12px;
         border-radius: 5px;
-        margin-top: 10px;
     }
     
-    #header2{
-        margin-left: 10px;
-    }
     
-    #header2 img{
-        margin-right: 0px;
-        margin-bottom: 10px;
-        width: 99%;
-        height: 40%;
-    }
-    
-    #header2 h3, #header2 p{
-        width: auto;
-    }
-    
-    #product{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    #product img{
-        margin-right: 0px;
-        float: none;
-        margin-left: 80px;
-        width: 50%;
-    }
-    
-    #product3, #product4, #product1, #product2{
-        margin-top: 10px;
-    }
-    
-    .allproducts{
-        width: 100%;
-    }
-    
-    .allproducts h3{
-        font-size: 16px;
-    }
-    
-    body>img{
-        width: 25%;
-        margin-top: 5px;
-        margin-right: 0px;
-    }
-    
-    #safety h2{
-        font-size: 20px;
-        margin-bottom: 50px;
-        width: 100%;
-    }
-    
-    .list{
-        display: inline-block;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
-        
-    }
-    
-    #safety1, #safety3{
-        width: 35%;
-        margin-left: 10px;
-        font-size: 12px;
-    }
-    
-    #safety2, #safety4{
-        margin: 10px;
-        font-size: 12px;
-    }
-    
-    #time h1{
-        margin-left: 10px;
-        font-size: 22px;
-        margin-bottom: 0px
-    }
-    
-    #time ul{
-        margin-left: 10px;
-        font-size: 12px;
-        margin-bottom: 0px;
-    }
-    
-    #time img{
-        width: 40%;
-        margin-top: 16%;
-    }
-    
-    #google, #apple{
+    .statement{
         margin: 5px;
-        width: 30%;
+        padding: 10px
     }
     
-    #countdown h2{
-        font-size: 20px;
+    .statement strong{
+        font-size: 12px;
     }
     
-    #countdown p{
+    #countdown{
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
         font-size: 10px;
     }
     
-    footer h4, footer a{
+    #countdown>p{
+        font-size: 9px;
+    }
+    
+    #clock{
+        font-size: 8px;
+    }
+    
+    #clock p{
+        font-size: 12px;
+    }
+    
+    .days{
+        margin-right: 5px;
+    }
+    
+    footer h2{
+        font-size: 20px;
+    }
+    
+    #products, #connectask, #companysupport{
         font-size: 14px;
     }
     
-    #all{
-        text-align: center;
+    #copyright h5{
+        font-size: 9px;
     }
+    
 }
