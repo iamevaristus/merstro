@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1032354328104",
+    "project_id": "app-merstro",
+    "storage_bucket": "app-merstro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032354328104:android:8be3ba256ac228396c8f1d",
+        "android_client_info": {
+          "package_name": "app.merstro.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032354328104-hiu25jkpoi1tliivu3838edo85jv4vhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.merstro.com",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "1032354328104-68dj6lvjo83vuic5dcmef5bf9cnjp8v3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNN7CNehMaJI3MFJXwM-ML4uRXPVQqVLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032354328104-68dj6lvjo83vuic5dcmef5bf9cnjp8v3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1032354328104-2t4m56n7gbrjpmf3idavs0pf70h2kobf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.merstro.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
